@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Aadf {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("시작값");
+		int 시작 = sc.nextInt();
+		System.out.println("마지막값");
+		int 마지막 = sc.nextInt();
+		System.out.println("증가값");
+		int 증가값 = sc.nextInt();
+		
+		int sum=0;
+				
+		for(int i=시작;i<=마지막;i+=증가값){
+			System.out.println("i:"+i);
+			sum+=i;
+		}
+		System.out.println(sum);
+
+	}
+
+}
