@@ -1,0 +1,37 @@
+package gfdDFA;
+
+public class Gasd {
+
+	public static void main(String[] args) {
+		
+		SGFH p1 = new SGFH();
+		p1.name = "고라파덕";
+		
+		System.out.println(p1.name+"의 레벨은 : "+p1.level);
+		System.out.println("레벨업!!!!");
+		
+		p1.레벨업();
+		System.out.println(p1.name+"의 레벨은 : "+p1.level);
+	}
+
+}
+
+
+package gfdDFA;
+
+public class SGFH {
+	String name;
+	int hp;
+	int atk;
+	int def;
+	int level=1;
+
+	void 울기() {
+		
+	}
+	
+	void 레벨업() {
+		level++;
+	}
+	
+}
